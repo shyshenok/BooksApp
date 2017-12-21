@@ -1,0 +1,6 @@
+<div>
+  <h2>Books</h2>
+  <ul *ngFor="let book of books">
+    <li><a  (click)="goToBook()">{{book.title}}</a></li>
+  </ul>
+</div>
