@@ -1,1 +1,9 @@
-<h2>book component</h2>
+<div class="wrapper">
+
+<div class="book-screen">
+  <h2>{{book.title}}</h2>
+  <h3><a [routerLink]="['/authors', book.author]">{{book.author}}</a></h3>
+  <h3><a [routerLink]="['/genres', book.genre, 'books']">{{book.genre}}</a></h3>
+  <p>{{book.description}}</p>
+</div>
+</div>

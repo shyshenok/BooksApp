@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,MAAO;EACL,SAAS,EAAE,GAAG;EACd,KAAK,EAAE,gBAAgB;EACvB,OAAO,EAAE,UAAU;EAEnB,yBAAyB;IAL3B,MAAO;MAMH,SAAS,EAAE,GAAG;EAEhB,SAAG;IACD,OAAO,EAAE,CAAC;IACV,MAAM,EAAE,CAAC;IACT,YAAG;MACD,UAAU,EAAE,IAAI",
+"sources": ["books-list.component.scss"],
 "names": [],
 "file": "books-list.component.css"
 }

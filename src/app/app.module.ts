@@ -16,6 +16,7 @@ import {GenresListComponent} from "./main-screen.component/list.component/genres
 import {ButtonMenuComponent} from "./main-screen.component/button-menu.component/button-menu.component";
 import {BookStoreService} from "./model/book-store-service";
 import {GenreStoreService} from "./model/genre-store-service";
+import {AuthorStoreService} from "./model/author-store-service";
 
 
 export const appRoutes: Routes = [
@@ -26,19 +27,17 @@ export const appRoutes: Routes = [
       {
         path: 'authors', component: AuthorListComponent, // /authors
         children: [
-          {
-            path: ':authorId', component: AuthorComponent, // /authors/:authorId
-            children: [
-              {path: 'books', component: BookComponent} // /authors/:authorId/books
-            ]
-          },
+          {path: ':authorName', component: AuthorComponent}, // /authors/:authorId
+
+          { path: ':authorName/books', component: BooksListComponent}, // /authors/:authorId/books
+
 
         ]
       },
       {
         path: 'books', component: BooksListComponent, // /books
         children: [
-          {path: ':bookId', component: BookComponent}, // /books/:bookId
+          {path: ':bookName', component: BookComponent}, // /books/:bookId
         ]
       },
       {
@@ -56,14 +55,14 @@ export const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, MainScreenComponent, ListComponent,
+    AppComponent, MainScreenComponent,
     AuthorComponent, BookComponent, AuthorListComponent,
     BooksListComponent, GenresListComponent, ButtonMenuComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(appRoutes)
   ],
-  providers: [BookStoreService, GenreStoreService],
+  providers: [BookStoreService, GenreStoreService, AuthorStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

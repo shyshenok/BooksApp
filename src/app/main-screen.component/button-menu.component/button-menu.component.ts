@@ -10,6 +10,8 @@ import {Router} from "@angular/router";
   styleUrls: ['./button-menu.component.css']
 })
 export class ButtonMenuComponent {
+
+
   constructor(private router: Router) {}
 
   goToBookList() {
@@ -21,4 +23,5 @@ export class ButtonMenuComponent {
   goToGenresList() {
     this.router.navigate(['/genres']);
   }
+
 }

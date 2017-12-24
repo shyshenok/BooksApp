@@ -20,7 +20,4 @@ export class GenresListComponent extends ListComponent {
     this.genres = genreStore.genres();
   }
 
-  goToBookList(genre) {
-    this.router.navigate(['/books', genre]);
-  }
 }

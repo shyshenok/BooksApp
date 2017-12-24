@@ -16,31 +16,39 @@ import {Book, BookStoreService} from "../../../model/book-store-service";
 export class BooksListComponent extends ListComponent implements OnInit, OnDestroy {
 
   genre:string;
+  author:string;
   private sub: any;
 
   books: Array<Book>;
 
+
   constructor(router: Router, protected bookStore: BookStoreService, private route: ActivatedRoute) {
     super(router);
-    this.books = bookStore.books();
   }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.genre = params['genreName'];
+      this.author = params['authorName'];
 
-      console.log("Genre: ", this.genre)
+      let books = this.bookStore.books()
 
-      // In a real app: dispatch action to load the details here.
+      console.log(books)
+
+      if (this.genre !== undefined) {
+        books = books.filter(b => b.genre == this.genre);
+      }
+
+      if (this.author !== undefined) {
+        books = books.filter(b => b.author == this.author);
+      }
+
+      this.books = books;
     });
   }
 
   ngOnDestroy() {
     this.sub.unsubscribe();
-  }
-
-  goToBook() {
-    this.router.navigate(['/books/book']);
   }
 
 }

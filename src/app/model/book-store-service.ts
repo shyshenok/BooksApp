@@ -31,8 +31,8 @@ export class BookStoreService {
          "title": "Learning JavaScript Design Patterns",
          "subtitle": "A JavaScript and jQuery Developer's Guide",
          "author": "Addy Osmani",
-         "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.",
-         "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/",
+         "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this author is for you.",
+         "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/author/",
          "genre" : "one"
 
        },
@@ -41,7 +41,7 @@ export class BookStoreService {
          "title": "Speaking JavaScript",
          "subtitle": "An In-Depth Guide for Programmers",
          "author": "Axel Rauschmayer",
-         "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.",
+         "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise author guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.",
          "website": "http://speakingjs.com/",
          "genre" : "two"
 
@@ -51,7 +51,7 @@ export class BookStoreService {
          "title": "Programming JavaScript Applications",
          "subtitle": "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
          "author": "Eric Elliott",
-         "description": "Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flexible and resilient code that's easier-yes, easier-to work with as your code base grows.",
+         "description": "Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical author, experienced JavaScript developers will learn how to write flexible and resilient code that's easier-yes, easier-to work with as your code base grows.",
          "website": "http://chimera.labs.oreilly.com/books/1234000000262/index.html",
          "genre" : "one"
 

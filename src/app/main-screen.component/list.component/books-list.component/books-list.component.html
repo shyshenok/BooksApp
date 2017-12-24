@@ -1,6 +1,10 @@
-<div>
-  <h2>Books</h2>
-  <ul *ngFor="let book of books">
-    <li><a  (click)="goToBook()">{{book.title}}</a></li>
-  </ul>
-</div>
+
+<div class="wrapper">
+  <div class="books">
+    <h2>Books</h2>
+    <ul *ngFor="let book of books">
+      <li><a [routerLink]="['/books', book.title]">{{book.title}}</a></li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+  </div>

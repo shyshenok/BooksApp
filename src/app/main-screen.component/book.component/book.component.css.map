@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,cAAe;EACb,KAAK,EAAE,IAAI",
+"sources": ["book.component.scss"],
 "names": [],
 "file": "book.component.css"
 }

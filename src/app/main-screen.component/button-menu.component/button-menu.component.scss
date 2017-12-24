@@ -1,4 +1,16 @@
 .button-menu {
+  height:100%;
+  padding: 40px;
     display: flex;
     flex-flow: row nowrap;
+    justify-content:center;
+
+  .btn {
+    margin: 20px;
+    border: 1px solid #337ab7;
+    color: #337ab7;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    outline-color: #337ab7;
+  }
 }

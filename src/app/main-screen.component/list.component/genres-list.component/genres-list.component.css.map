@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,MAAO;EACL,SAAS,EAAE,GAAG;EACd,OAAO,EAAE,UAAU;EACnB,yBAAyB;IAH3B,MAAO;MAIH,SAAS,EAAE,GAAG;;AAIlB,EAAG;EACD,OAAO,EAAE,CAAC;EAEV,KAAG;IACD,UAAU,EAAE,IAAI",
+"sources": ["genres-list.component.scss"],
 "names": [],
 "file": "genres-list.component.css"
 }
